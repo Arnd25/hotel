@@ -1,0 +1,28 @@
+.header {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(32);
+    padding: rem(13) rem(72) rem(0) rem(72);
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      max-width: rem(343);
+      color: var(--gray);
+    }
+    &-benefit {
+      display: flex;
+      align-items: center;
+      gap: rem(13);
+    }
+  }
+  &-menu-burger {
+    display: none;
+  }
+  &__contact-title {
+    color: var(--gray);
+  }
+}

@@ -1,0 +1,65 @@
+.office {
+  &:is(&--section) {
+    .office {
+      overflow-x: hidden;
+      &__container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      &__header {
+        @include d-flex(center,center,#{rem(22)});
+        flex-direction: column;
+      }
+      &__images {
+        position: relative;
+        display: flex;
+      }
+      &-img {
+        border-radius: var(--radius);
+        width: rem(420);
+        height: rem(280);
+        position: absolute;
+        border: var(--background) solid 6px;
+        &:nth-child(1) {
+          rotate: -6.9deg;
+          left: rem(27);
+          top: rem(50);
+        }
+        &:nth-child(2) {
+          rotate: 3.9deg;
+          left: rem(298);
+          top: rem(110);
+        }
+        &:nth-child(3) {
+          rotate: 4.47deg;
+          left: rem(568);
+          top: rem(50);
+        }
+        &:nth-child(4) {
+          rotate: -4.62deg;
+          left: rem(883);
+          top: rem(110);
+        }
+        &:nth-child(5) {
+          rotate: 7.95deg;
+          left: rem(1157);
+          top: rem(50);
+        }
+        &:nth-child(6) {
+          rotate: -4.4deg;
+          left: rem(1460);
+          top: rem(120);
+          z-index: 2;
+        }
+        &:nth-child(7) {
+          rotate: 3.9deg;
+          left: rem(1730);
+          top: rem(50);
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

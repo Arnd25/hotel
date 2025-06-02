@@ -1,0 +1,12 @@
+.review-card {
+  &__user {
+    display: flex;
+    &-stars {
+      display: flex;
+      
+      p {
+        margin-left: rem(11);
+      }
+    }
+  }
+}

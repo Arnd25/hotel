@@ -1,0 +1,18 @@
+.sales__card {
+  border-radius: var(--radius);
+  &:is(:active,:hover) {
+    border: var(--link) solid;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: rem(9);
+  padding-bottom: rem(17);
+  &-image {
+    border-radius: var(--radius);
+  }
+  &-link {
+    color: var(--link);
+    text-decoration: underline;
+    font-size: rem(20);
+  }
+}

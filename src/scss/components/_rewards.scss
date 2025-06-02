@@ -1,0 +1,14 @@
+.rewards {
+  &__container {
+    max-width: 100%;
+    padding-inline: rem(165);
+  }
+  &-title {
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    gap: rem(40) rem(60);
+    grid-template-columns: repeat(4,1fr);
+  }
+}

@@ -1,0 +1,23 @@
+:root {
+  --font-family-primary: "Inter", sans-serif;
+
+  --background: #fff;
+  --foreground: #000000;
+
+  --primary: #015BC1;
+  --primary-gradient: linear-gradient(90deg, #005BBF 0%, #1CB2EF 44.74%, #4ABF5C 77.27%, #D6E42A 100%);
+
+  --secondary: #00AEEF;
+  --secondary-foreground: #ffffff;
+  --secondary-background: #F9F9FA;
+
+  --gray: #808B97;
+
+  --accent:#FFDB5D;
+  --border: #EBEBEB;
+  --radius: #{rem(20)};
+
+  --content: #{rem(1380)};
+  --container-offset: #{rem(20)};
+  --container-width: calc(var(--content) + (var(--container-offset) * 2));
+}

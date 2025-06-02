@@ -1,0 +1,28 @@
+.advantages {
+  &__container {
+    padding-inline: rem(93) rem(35);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: rem(59);
+  }
+  &-title {
+    font-size: fluid(52,42);
+    text-align: center;
+    max-width: rem(1270);
+  }
+  &-content {
+    display: flex;
+
+  }
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: rem(20);
+    row-gap: rem(65);
+  }
+  &-img {
+    border-radius: var(--radius);
+  }
+}

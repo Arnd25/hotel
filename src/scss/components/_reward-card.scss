@@ -1,0 +1,16 @@
+.reward-card {
+  padding: rem(35) rem(25) rem(20) rem(25);
+  display: flex;
+  flex-direction: column;
+  gap: rem(50);
+  align-items: center;
+  border-radius: var(--radius);
+  border: var(--secondary) solid 1px;
+  text-align: center;
+  max-width: rem(350);
+  max-height: rem(404);
+
+  &-img {
+    @include square(rem(150));
+  }
+}

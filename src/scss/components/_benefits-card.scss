@@ -1,0 +1,16 @@
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-icon {
+    background: linear-gradient(180deg,var(--primary),var(--link));
+    @include square(rem(74));
+    @include d-flex();
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+  }
+  &-title {
+    margin-block: rem(36) rem(29);
+  }
+}

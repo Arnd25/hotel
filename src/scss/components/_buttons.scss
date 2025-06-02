@@ -1,0 +1,28 @@
+.button {
+  cursor: pointer;
+  padding: rem(10) rem(33);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(8);
+  color: var(--secondary-foreground);
+  font-weight: 400;
+  border-radius: rem(10);
+  border: none;
+  font-size: 26px;
+  &__icon {
+    @include square(#{rem(40)});
+    @include d-flex(center, center);
+    background-color: var(--secondary);
+    border-radius: 50%;
+  }
+  &--primary {
+    background: var(--primary-gradient);
+  }
+  &--secondary {
+    background-color: var(--muted);
+  }
+  &:is(:hover, :active) {
+    background-color: var(--accent);
+  }
+}
