@@ -1,12 +1,21 @@
 .review-card {
+  break-inside: avoid;
+  max-width: rem(413);
+  background: var(--background);
+  padding: rem(30) rem(40);
+  margin-bottom: rem(25);
   &__user {
     display: flex;
     &-stars {
       display: flex;
-      
       p {
         margin-left: rem(11);
       }
+    }
+    &-img {
+      @include square(rem(56));
+      background: green;
+      border-radius: 50%;
     }
   }
 }

@@ -2,29 +2,29 @@
   padding-inline: rem(20);
   margin-top: rem(619);
   &__container {
-    position: relative;
     max-width: 100%;
+    padding: rem(35) rem(300) rem(116);
+    position: relative;
     background-color: var(--secondary-background);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    border-radius: var(--radius);
   }
   &-decoration {
     position: absolute;
     @include square(rem(500));
     rotate: -15deg;
-    top: rem(-167);
+    top: rem(-107);
     left: rem(7);
     z-index: 1;
   }
   &__menu {
     z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    column-count: 3;
   }
   &-title {
     z-index: 2;
     text-align: center;
+    margin-bottom: rem(47);
   }
 }
