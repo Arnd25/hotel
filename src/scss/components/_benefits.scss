@@ -6,6 +6,7 @@
     align-items: center;
     padding-inline: rem(130);
     max-width: 100%;
+    padding-block: rem(118) rem(113);
   }
   &__header {
     text-align: center;
@@ -19,10 +20,9 @@
     }
   }
   &__content {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    @include d-grid(3,rem(120), rem(140));
     text-align: center;
-    gap: rem(160) rem(130);
+
   }
   &-button {
     padding: rem(30) rem(50);;

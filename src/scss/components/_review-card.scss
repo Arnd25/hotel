@@ -4,10 +4,22 @@
   background: var(--background);
   padding: rem(30) rem(40);
   margin-bottom: rem(25);
+  display: flex;
+  flex-direction: column;
+  gap: rem(25);
+  border-radius: var(--radius);
+  @include tablet {
+    max-width: 800px;
+  }
   &__user {
     display: flex;
+    gap: rem(22);
     &-stars {
       display: flex;
+      .ri-star-s-fill {
+        color: #FFCA41;
+      }
+
       p {
         margin-left: rem(11);
       }

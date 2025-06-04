@@ -9,8 +9,14 @@
   text-align: center;
   max-width: rem(350);
   max-height: rem(404);
-
+  @include tablet {
+    max-width: 100%;
+    max-height: 100%;
+  }
   &-img {
     @include square(rem(150));
+  }
+  &-text span {
+    font-weight: 600;
   }
 }

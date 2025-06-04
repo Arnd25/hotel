@@ -40,7 +40,7 @@ class Menu {
             transform ${this.animationDuration}ms ease
         `;
         this.menu.style.opacity = '0';
-        this.menu.style.transform = 'translateY(-20px)';
+        this.menu.style.transform = 'translateY(-10px)';
         this.menu.style.display = 'none';
     }
 
@@ -106,7 +106,7 @@ class Menu {
         if (this.isAnimating) return;
         this.isAnimating = true;
 
-        this.menu.style.display = 'block';
+        this.menu.style.display = 'flex';
         this.htmlElement.style.overflow = 'hidden';
 
         requestAnimationFrame(() => {

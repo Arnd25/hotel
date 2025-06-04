@@ -1,15 +1,22 @@
 .advantages-card {
-
+  break-inside: avoid;
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: rem(9);
-  max-width: calc(100%/3.3);
+  gap: rem(49);
   padding: rem(7) 0 rem(24) rem(15);
+  max-width: rem(360);
+  width: 100%;
   &-icon {
     text-align: center;
     font-size: rem(54);
+  }
+  &-title {
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
   }
   &:is(:active,:hover) {
     border: var(--primary) solid;

@@ -2,31 +2,23 @@
   max-height: 100%;
   height: 100%;
   padding: rem(31);
+  position: relative;
   &__container {
     z-index: 1;
     position: relative;
     display: flex;
+    width: 100%;
     flex-direction: column;
     min-height: rem(809);
     border-radius: var(--radius);
+    max-height: 100%;
     height: 100%;
     padding-block-start: 78px;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     gap:rem(104) ;
-    &::after {
-      border-radius: var(--radius);
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.6);
-      z-index: -1;
-
-    }
   }
   &-title {
     color: var(--secondary-foreground);
@@ -40,4 +32,5 @@
   &-button {
     padding: rem(32);
   }
+
 }

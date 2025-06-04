@@ -2,13 +2,17 @@
   &__container {
     max-width: 100%;
     padding-inline: rem(165);
+    @include mobile {
+      padding-inline: rem(60);
+    }
   }
   &-title {
     text-align: center;
+    margin-bottom: rem(60);
   }
   &__grid {
     display: grid;
     gap: rem(40) rem(60);
-    grid-template-columns: repeat(4,1fr);
+    @include d-grid(4,rem(60),rem(40))
   }
 }

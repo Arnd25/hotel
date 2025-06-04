@@ -4,11 +4,29 @@
     flex-direction: column;
     gap: rem(32);
     padding: rem(13) rem(72) rem(0) rem(72);
+    @include tablet {
+      flex-direction: row;
+      place-items: start;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+
   }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      row-gap: 25px;
+      column-gap: 10px;
+    }
     &-text {
       max-width: rem(343);
       color: var(--gray);
@@ -17,12 +35,42 @@
       display: flex;
       align-items: center;
       gap: rem(13);
+      span {
+        font-weight: 600;
+      }
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &-button {
+      padding: rem(10) rem(30);
+      @include tablet {
+        display: none;
+      }
+    }
+    &-contact {
+      @include tablet {
+        display: none;
+      }
     }
   }
   &-menu-burger {
     display: none;
+    padding-inline: rem(10);
+    @include tablet {
+      display: flex;
+    }
   }
-  &__contact-title {
-    color: var(--gray);
+  &__contact {
+    &-title {
+      color: var(--gray);
+    }
+    &-link {
+      transition: all 0.3s;
+      &:is(:hover,:active) {
+        color: var(--secondary);
+      }
+    }
   }
 }

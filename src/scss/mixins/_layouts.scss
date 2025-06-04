@@ -13,10 +13,11 @@ $global_gap: 24px;
   gap: $gap;
 }
 
-@mixin d-grid($column, $gap: $global_gap) {
+@mixin d-grid($column, $column_gap:$global_gap, $row_gap: $global_gap) {
   display: grid;
   grid-template-columns: repeat($column, 1fr);
-  gap: $gap;
+  row-gap: $row_gap;
+  column-gap: $column_gap;
   @if($column >= 6) {
     @include tablet {
       grid-template-columns: repeat(4,1fr);
@@ -29,11 +30,16 @@ $global_gap: 24px;
       grid-template-columns: repeat(2,1fr);
     }
   } @else {
+    @include tablet {
+      grid-template-columns: repeat(2,1fr);
+    }
     @include mobile {
       grid-template-columns: 1fr;
     }
   }
-
+  @include mobile-s {
+    grid-template-columns: 1fr;
+  }
 }
 
 @mixin hide {

@@ -1,5 +1,56 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: rem(26);
+  &-item-link {
+    transition: all 0.3s;
+    &:is(:hover,:active) {
+      color: var(--secondary);
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(26);
+  }
+  &__header {
+    display: none;
+  }
+}
+.navbar {
+  @include tablet {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    padding-block-start: rem(64);
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(40);
+    &__menu {
+      @include d-flex(center, center, #{rem(32)});
+      flex-direction: column;
+      overflow-y: auto;
+
+    }
+    &__header {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      gap: rem(10);
+      &-benefit {
+        display: flex;
+        gap: rem(13);
+      }
+      &-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-link {
+          font-size: rem(28);
+        }
+      }
+    }
+    color: var(--secondary-foreground);
+  }
 }
