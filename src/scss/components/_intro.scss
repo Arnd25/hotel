@@ -1,12 +1,22 @@
 .intro {
   max-height: 100%;
   height: 100%;
-  padding: rem(31);
+  padding: rem(31) rem(31) rem(146) rem(31);
   position: relative;
+  &:is(.header-scroll) {
+  margin-top: 100px;
+}
+  @include tablet {
+    padding-top: rem(10);
+  }
+  @include mobile {
+    padding-inline: rem(1);
+  }
   &__container {
     z-index: 1;
     position: relative;
     display: flex;
+    max-width: 100%;
     width: 100%;
     flex-direction: column;
     min-height: rem(809);
@@ -19,10 +29,14 @@
     background-size: cover;
     background-position: center;
     gap:rem(104) ;
+    padding-bottom: rem(127);
+
+    @include mobile {
+      min-height: unset;
+    }
   }
   &-title {
     color: var(--secondary-foreground);
-    font-size: fluid(60,42);
     text-align: center;
     max-width: rem(1205);
     span {
@@ -31,6 +45,14 @@
   }
   &-button {
     padding: rem(32);
+    @include mobile {
+      padding: rem(15);
+    }
   }
-
+  &-decoration {
+    position: absolute;
+    place-self: center;
+    bottom: -90px;
+    width: 170px;
+  }
 }

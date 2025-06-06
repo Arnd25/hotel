@@ -4,7 +4,6 @@
     padding-inline: 0;
   }
   &__container {
-
     background-color: var(--secondary-background);
     border-radius: var(--radius);
     text-align: center;
@@ -12,6 +11,7 @@
     flex-direction: column;
     gap: rem(59);
     padding-top: rem(10);
+
     @include mobile {
       padding-inline: 0;
     }
@@ -19,8 +19,9 @@
   &__grid {
     @include d-grid(4,rem(75), rem(16));
     padding-inline: rem(80);
-    @include mobile {
-      padding-inline: 5px ;
+    @include tablet {
+      padding-inline: 0;
+      gap: rem(30);
     }
   }
 }

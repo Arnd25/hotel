@@ -22,11 +22,13 @@
     padding-block-start: rem(64);
     background-color: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(10px);
-    max-width: 55%;
-    display: flex;
+    max-width: 45%;
     flex-direction: column;
     align-items: center;
-    gap: rem(40);
+    gap: rem(20);
+    @include mobile {
+      max-width: 80%;
+    }
     &__menu {
       @include d-flex(center, center, #{rem(32)});
       flex-direction: column;

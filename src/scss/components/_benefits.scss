@@ -7,6 +7,9 @@
     padding-inline: rem(130);
     max-width: 100%;
     padding-block: rem(118) rem(113);
+    @include mobile {
+      padding-inline: rem(10);
+    }
   }
   &__header {
     text-align: center;
@@ -25,6 +28,9 @@
 
   }
   &-button {
-    padding: rem(30) rem(50);;
+    padding: rem(30) rem(50);
+    @include mobile {
+      padding: rem(15);
+    }
   }
 }

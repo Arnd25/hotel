@@ -9,11 +9,19 @@
   gap: rem(25);
   border-radius: var(--radius);
   @include tablet {
-    max-width: 800px;
+    width: 100%;
+  }
+  @include mobile {
+    padding-inline: rem(10);
+    max-width: unset;
+    width: unset;
   }
   &__user {
     display: flex;
     gap: rem(22);
+    @include mobile-s {
+      flex-direction: column;
+    }
     &-stars {
       display: flex;
       .ri-star-s-fill {

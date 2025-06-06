@@ -2,8 +2,8 @@
   &__container {
     max-width: 100%;
     padding-inline: rem(165);
-    @include mobile {
-      padding-inline: rem(60);
+    @include tablet {
+      padding-inline: rem(20);
     }
   }
   &-title {

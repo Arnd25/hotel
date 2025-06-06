@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="website">
-        <header class="header">
+        <header class="header header-hide">
             <div class="header__container container">
                 <div class="header__top" >
                     <div class="header-logo logo">
@@ -22,7 +22,6 @@
                         </a>
                     </div>
                     <div class="header__top-text">Крупнейший оператор на рынке туристических услуг</div>
-
                     <div class="header__top-benefit">
                         <img src="src/img/like.svg" alt="" class="header__top-benefit-icon">
                         <p class="header__top-benefit-text">Служба заботы <span>24/7</span> </p>
@@ -36,47 +35,44 @@
                     <button class="header__top-button button button--primary">Забронировать</button>
                 </div>
                 <button class="header-menu-burger button button--primary" data-menu-toggler><i class="ri-align-justify"></i></button>
-                <div class="header__bottom">
-                    <div class="header__bottom-navbar navbar" data-menu-overlay>
-                        <div class="navbar__header">
-                            <div class="navbar__header-benefit">
-                                <img src="src/img/like.svg" alt="" class="header__top-benefit-icon">
-                                <p class="header__top-benefit-text">Служба заботы <span>24/7</span> </p>
-                            </div>
-                            <div class="navbar__header-contact">
-                                <p class="navbar__header__contact-title">Многоканальный</p>
-                                <a href="tel:800700-78-78" class="navbar__header__contacts-link">
-                                    8 800 700-78-78
-                                </a>
-                            </div>
-                            <button class="navbar__header__top-button button button--primary">Забронировать</button>
+
+                <div class="header__bottom navbar" data-menu-overlay>
+                    <div class="navbar__header">
+                        <div class="navbar__header-benefit">
+                            <img src="src/img/like.svg" alt="" class="header__top-benefit-icon">
+                            <p class="header__top-benefit-text">Служба заботы <span>24/7</span> </p>
                         </div>
-                        <ul class="navbar__menu">
-                            <li class="navbar-item">
-                                <a href="#advantages" class="navbar-item-link">Преимущества</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#sales" class="navbar-item-link">Направления</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#benefits" class="navbar-item-link">Почему TEZPlus</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#rewards" class="navbar-item-link">Наши награды</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#" class="navbar-item-link">Более 120 офисов</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#reviews" class="navbar-item-link">Отзывы</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#footer" class="navbar-item-link">Контакты</a>
-                            </li>
-                        </ul>
-
+                        <div class="navbar__header-contact">
+                            <p class="navbar__header__contact-title">Многоканальный</p>
+                            <a href="tel:800700-78-78" class="navbar__header__contacts-link">
+                                8 800 700-78-78
+                            </a>
+                        </div>
+                        <button class="navbar__header__top-button button button--primary">Забронировать</button>
                     </div>
-
+                    <ul class="navbar__menu">
+                        <li class="navbar-item">
+                            <a href="#advantages" class="navbar-item-link">Преимущества</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#sales" class="navbar-item-link">Направления</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#benefits" class="navbar-item-link">Почему TEZPlus</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#rewards" class="navbar-item-link">Наши награды</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#office" class="navbar-item-link">Более 120 офисов</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#reviews" class="navbar-item-link">Отзывы</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#footer" class="navbar-item-link">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -86,14 +82,17 @@
                     <div class="intro-icon">
                         <img src="src/img/cursor.svg" alt="">
                     </div>
-                    <h1 class="intro-title" >TEZPlus — онлайн-сервис для <span>самостоятельного бронирования</span> отелей по всему миру от крупнейшего туроператора TEZ TOUR</h1>
+                    <h1 class="intro-title h1">TEZPlus — онлайн-сервис для <span>самостоятельного бронирования</span> отелей по всему миру от крупнейшего туроператора TEZ TOUR</h1>
                     <button class="intro-button button button--primary">Забронировать номер</button>
+                    <a href="#!" class="intro-decoration">
+                        <img src="src/img/Vector.png" alt="">
 
+                    </a>
                 </div>
             </section>
             <section class="advantages advantages--section" id="advantages">
                 <div class="advantages__container container">
-                    <h2 class="advantages-title">Легко выбрать и выгодно забронировать отель, апартаменты или виллу в любой точке планеты</h2>
+                    <h2 class="advantages-title h2">Легко выбрать и выгодно забронировать отель, апартаменты или виллу в любой точке планеты</h2>
                     <div class="advantages-content">
                         <ul class="advantages-grid">
                             <li class="advantages-grid-card advantages-card">
@@ -315,11 +314,11 @@
                     </ul>
                 </div>
             </section>
-            <section class="office office--section">
+            <section class="office office--section" id="office">
                 <div class="office__container container">
                     <div class="office__header">
                         <img src="src/img/logo-icon.svg" alt="" class="office__header-icon">
-                        <h2 class="office__header-title">Более 120 офисов по всей России</h2>
+                        <h2 class="office__header-title h2">Более 120 офисов по всей России</h2>
                         <div class="office__header-text">TEZ TOUR — это бренд, которому доверяют</div>
                     </div>
                     <div class="office__images">
@@ -336,7 +335,7 @@
             <section class="reviews reviews--section" id="reviews">
                 <div class="reviews__container container">
                     <img src="src/img/decoration.png" alt="" class="reviews-decoration">
-                    <h2 class="reviews-title">Отзывы</h2>
+                    <h2 class="reviews-title h2">Отзывы</h2>
                     <div class="reviews__menu">
                         <div class="review-card">
                             <div class="review-card__user">
@@ -466,5 +465,6 @@
     </div>
 
     <script type="module" src="src/scripts/app.js"></script>
+
 </body>
 </html>

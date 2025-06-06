@@ -1,6 +1,8 @@
 .reviews {
   padding-inline: rem(20);
-  margin-top: rem(619);
+  @include mobile {
+    padding-inline: unset;
+  }
   &__container {
     max-width: 100%;
     padding: rem(35) rem(300) rem(116);

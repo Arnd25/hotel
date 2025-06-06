@@ -4,32 +4,39 @@
     flex-direction: column;
     gap: rem(32);
     padding: rem(13) rem(72) rem(0) rem(72);
+    z-index: 99;
     @include tablet {
       flex-direction: row;
       place-items: start;
       align-items: center;
       justify-content: space-between;
     }
+    @include mobile-s {
+      padding-inline: 20px;
+    }
   }
   &-logo {
     display: flex;
     align-items: center;
     gap: rem(40);
+    min-width: 270px;
+    @include mobile {
+      flex-direction: column;
+      min-width: 170px;
+    }
 
   }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      row-gap: 25px;
-      column-gap: 10px;
-    }
+    gap: rem(40);
     &-text {
       max-width: rem(343);
       color: var(--gray);
+      @include mobile-s {
+        display: none;
+      }
     }
     &-benefit {
       display: flex;
@@ -55,6 +62,7 @@
       }
     }
   }
+
   &-menu-burger {
     display: none;
     padding-inline: rem(10);
@@ -73,4 +81,22 @@
       }
     }
   }
+  @include tablet {
+    background: var(--background);
+    z-index: 9999;
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    top: 0;
+    padding-bottom: rem(15);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    &:is(&-hide) {
+      position: sticky;
+    }
+  }
+  &-scroll {
+    top: -100px;
+
+  }
+
 }

@@ -2,15 +2,18 @@
   padding-inline: var(--container-offset);
   margin-inline: auto;
   max-width: 100%;
+  @include mobile {
+    padding: 5px;
+  }
 }
 
 .h1 {
-  font-size: fluid(60,42);
+  font-size: fluid(60,32);
   color: currentColor;
   font-weight: 600;
 }
 .h2 {
-  font-size: fluid(52,42);
+  font-size: fluid(52,26);
   color: currentColor;
   font-weight: 600;
 }
