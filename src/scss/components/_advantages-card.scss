@@ -8,6 +8,7 @@
   padding: rem(7) 0 rem(24) rem(15);
   max-width: rem(360);
   width: 100%;
+
   @include mobile {
     width: unset;
     max-width: unset;
@@ -24,5 +25,6 @@
   }
   &:is(:active,:hover) {
     border: var(--primary) solid;
+    scale: 1;
   }
 }

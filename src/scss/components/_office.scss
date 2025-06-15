@@ -1,5 +1,6 @@
 .office {
   &:is(&--section) {
+    padding-top: rem(215);
     .office {
       &__container {
         max-width: 100%;

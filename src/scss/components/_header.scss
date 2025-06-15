@@ -15,22 +15,22 @@
       padding-inline: 20px;
     }
   }
-  &-logo {
-    display: flex;
-    align-items: center;
-    gap: rem(40);
-    min-width: 270px;
-    @include mobile {
-      flex-direction: column;
-      min-width: 170px;
-    }
 
-  }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: rem(40);
+    &-logo {
+      display: flex;
+      align-items: center;
+      gap: rem(40);
+      min-width: 270px;
+      @include mobile {
+        flex-direction: column;
+        min-width: 170px;
+      }
+    }
     &-text {
       max-width: rem(343);
       color: var(--gray);

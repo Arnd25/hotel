@@ -6,6 +6,7 @@
     flex-direction: column;
     place-items: center;
     gap: rem(59);
+    transition: 0.3s;
     @include mobile {
       padding-inline: rem(0);
     }
