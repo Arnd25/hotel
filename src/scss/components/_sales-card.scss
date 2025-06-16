@@ -1,5 +1,7 @@
 .sales__card {
   border-radius: var(--radius);
+  max-width: rem(385);
+  max-height: rem(335);
   &:is(:active,:hover) {
     border: var(--link) solid;
   }
